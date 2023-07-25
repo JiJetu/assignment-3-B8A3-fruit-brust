@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-them="cupcake">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
                 extend: {
                     colors: {
                         'primary-color': '#F85559',
-                        'secondary-color': '#121212',
+                        'secondary-color': '#121212CC',
                     },
                     backgroundImage: {
                         'slide-1': "url('./images/banner1.png')",
@@ -114,16 +114,18 @@
         </nav>
 
         <!-- Banner section -->
-        <section>
+        <section class="">
             <!-- slide container -->
-            <div class="carousel w-full h-[600px]">
+            <div class="carousel w-full h-[250px] lg:h-[600px]">
                 <!-- slide 1 -->
-                <div id="slide1" class="hero carousel-item relative w-full bg-slide-1 flex justify-center text-center bg-opacity-90">
+                <div id="slide1"
+                    class="hero carousel-item relative w-full bg-slide-1 flex justify-center text-center bg-opacity-90">
                     <div class="hero-overlay text-center space-y-7 ">
-                        <h2 class="mt-20 text-7xl font-bold text-white">
+                        <h2 class="mt-6 lg:mt-20 text-2xl lg:text-7xl font-bold text-white">
                             Exotic tastes at your
                             <br>
-                            doorstep</h2>
+                            doorstep
+                        </h2>
                         <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white rounded-lg">Shop Now</button>
                     </div>
@@ -135,10 +137,11 @@
                 <!-- slide 2 -->
                 <div id="slide2" class="hero carousel-item relative w-full bg-slide-2 flex justify-center text-center">
                     <div class="hero-overlay text-center space-y-7">
-                        <h2 class="mt-20 text-7xl font-bold text-white">
+                        <h2 class="mt-6 lg:mt-20 text-2xl lg:text-7xl font-bold text-white">
                             Exotic tastes at your
                             <br>
-                            doorstep</h2>
+                            doorstep
+                        </h2>
                         <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white rounded-lg">Shop Now</button>
                     </div>
@@ -150,10 +153,11 @@
                 <!-- slide 3 -->
                 <div id="slide3" class="hero carousel-item relative w-full bg-slide-3 flex justify-center text-center">
                     <div class="hero-overlay text-center space-y-7">
-                        <h2 class="mt-20 text-7xl font-bold text-white">
+                        <h2 class="mt-6 lg:mt-20 text-2xl lg:text-7xl font-bold text-white">
                             Exotic tastes at your
                             <br>
-                            doorstep</h2>
+                            doorstep
+                        </h2>
                         <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white rounded-lg">Shop Now</button>
                     </div>
@@ -165,10 +169,11 @@
                 <!-- slide 4 -->
                 <div id="slide4" class="hero carousel-item relative w-full bg-slide-4 flex justify-center text-center">
                     <div class="hero-overlay text-center space-y-7">
-                        <h2 class="mt-20 text-7xl font-bold text-white">
+                        <h2 class="mt-6 lg:mt-20 text-2xl lg:text-7xl font-bold text-white">
                             Exotic tastes at your
                             <br>
-                            doorstep</h2>
+                            doorstep
+                        </h2>
                         <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
                         <button class="btn btn-error text-white rounded-lg">Shop Now</button>
                     </div>
@@ -179,9 +184,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- fruit section  -->
+        <section class="max-w-6xl mx-auto hidden lg:block relative -top-28">
+            <div class="flex justify-around items-center px-10 py-12 bg-white
+            ">
+                <div class="text-center space-y-3">
+                    <img src="./images/fruit1.png" alt="img">
+                    <p class="text-secondary-color">Strawberry</p>
+                </div>
+                <div class="text-center space-y-3">
+                    <img src="./images/fruit2.png" alt="img">
+                    <p class="text-secondary-color">Orange</p>
+                </div>
+                <div class="text-center space-y-3">
+                    <img src="./images/fruit3.png" alt="img">
+                    <p class="text-secondary-color">Mango</p>
+                </div>
+                <div class="text-center space-y-3">
+                    <img src="./images/fruit4.png" alt="img">
+                    <p class="text-secondary-color">Strawberry</p>
+                </div>
+                <div class="text-center space-y-3">
+                    <img src="./images/fruit5.png" alt="img">
+                    <p class="text-secondary-color">Pomegranate</p>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-        <!-- fruit  -->
+        
     </main>
     <footer>
 
