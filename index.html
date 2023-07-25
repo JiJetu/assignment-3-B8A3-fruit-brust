@@ -25,7 +25,13 @@
                     colors: {
                         'primary-color': '#F85559',
                         'secondary-color': '#121212',
-                    }
+                    },
+                    backgroundImage: {
+                        'slide-1': "url('./images/banner1.png')",
+                        'slide-2': "url('./images/banner2.png')",
+                        'slide-3': "url('./images/banner3.png')",
+                        'slide-4': "url('./images/banner4.png')",
+                    },
                 }
             }
         }
@@ -49,21 +55,23 @@
     <header class="container mx-auto">
 
         <!-- navbar section -->
-
-        <nav class="lg:bg-primary-color rounded-full px-3 md:px-5 lg:px-10 py-2 md:py-5 lg:py-8 my-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+        <nav
+            class="lg:bg-primary-color rounded-full px-3 md:px-5 lg:px-10 py-2 md:py-5 lg:py-8 my-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
             <div class="relative grid items-center grid-cols-2 lg:grid-cols-3">
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li><a href="/" aria-label="Our product" title="Our product"
                             class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a>
                     </li>
                     <li><a href="/" aria-label="Our product" title="Our product"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">About Us</a>
+                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">About
+                            Us</a>
                     </li>
                     <li><a href="/" aria-label="Product pricing" title="Product pricing"
                             class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">Shop</a>
                     </li>
                     <li><a href="/" aria-label="Product pricing" title="Product pricing"
-                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">All Fruits</a>
+                            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400">All
+                            Fruits</a>
                     </li>
                 </ul>
 
@@ -72,13 +80,16 @@
                     <div>
                         <img src="./images/logo.png" alt="img" class="w-7 lg:w-full">
                     </div>
-                    <span class="ml-2 text-xl lg:text-4xl font-bold tracking-wide text-secondary-color lg:text-white">Fruit Burst</span>
+                    <span
+                        class="ml-2 text-xl lg:text-4xl font-bold tracking-wide text-secondary-color lg:text-white">Fruit
+                        Burst</span>
                 </a>
 
                 <!-- search part -->
                 <div class="hidden lg:flex lg:justify-end">
                     <div class="form-control relative">
-                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" />
+                        <input type="text" placeholder="Search"
+                            class="input input-bordered w-24 md:w-auto rounded-full" />
                         <!-- icon -->
                         <div class="absolute inset-y-0 right-0 flex items-center pr-5 pointer-events-none">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -101,9 +112,76 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Banner section -->
+        <section>
+            <!-- slide container -->
+            <div class="carousel w-full h-[600px]">
+                <!-- slide 1 -->
+                <div id="slide1" class="hero carousel-item relative w-full bg-slide-1 flex justify-center text-center bg-opacity-90">
+                    <div class="hero-overlay text-center space-y-7 ">
+                        <h2 class="mt-20 text-7xl font-bold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep</h2>
+                        <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="btn btn-error text-white rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="hero carousel-item relative w-full bg-slide-2 flex justify-center text-center">
+                    <div class="hero-overlay text-center space-y-7">
+                        <h2 class="mt-20 text-7xl font-bold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep</h2>
+                        <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="btn btn-error text-white rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="hero carousel-item relative w-full bg-slide-3 flex justify-center text-center">
+                    <div class="hero-overlay text-center space-y-7">
+                        <h2 class="mt-20 text-7xl font-bold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep</h2>
+                        <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="btn btn-error text-white rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div id="slide4" class="hero carousel-item relative w-full bg-slide-4 flex justify-center text-center">
+                    <div class="hero-overlay text-center space-y-7">
+                        <h2 class="mt-20 text-7xl font-bold text-white">
+                            Exotic tastes at your
+                            <br>
+                            doorstep</h2>
+                        <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+                        <button class="btn btn-error text-white rounded-lg">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
-
+        <!-- fruit  -->
     </main>
     <footer>
 
